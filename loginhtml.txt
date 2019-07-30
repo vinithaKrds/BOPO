@@ -1,0 +1,38 @@
+<div class="hm-form">
+	
+<header class="header">
+	<h2 class="heading icon-hm-club-logo-dark">SIGN IN</h2>
+	<p class="excerpt">Become a member and get 10% off your next purchase!</p>
+</header>
+<form id="theLoginForm" action="/en_us/j_spring_security_check" method="POST" novalidate="" class="ng-pristine ng-valid">
+	<div class="inputwrapper required">
+		<label class="label" for="txt-signin-email" data-optional="(Optional)">Email</label>
+		<input required="" type="email" id="txt-signin-email" name="j_username" class="text-input " maxlength="150" data-validation-maxlength="150" minlength="0" data-validation-minlength="0" autocomplete="email" data-validation-email="true" data-validation-email-text="Incorrect format" data-validation-maxlength-text="Please enter a valid email address." data-validation-required-text="Enter an email address." data-validated-value="" data-validation-inline="false" data-login-failed-text="Wrong email or password, please try again.">
+	</div>
+	<div class="inputwrapper required">
+		<label class="label" for="txt-signin-password" data-optional="(Optional)">Password</label>
+		<input required="" type="password" id="txt-signin-password" name="j_password" class="password-input" data-validation-required-text="Please enter a password." data-validation-nospaces="true" data-validation-nospaces-text="Password cannot contain spaces" data-validation-minlength-text="Your password needs to be at least 6 characters long" data-validation-maxlength-text="Your password exceeds the maximum character limit of 25." data-validation-pw-not-email="false" data-validation-pw-not-email-text="" data-validation-tips-fullfilled="true" data-validation-tips-fullfilled-text="" data-validation-inline="false">
+		<button type="button" data-show-text="SHOW" data-hide-text="HIDE" tabindex="0" class="toggle-password-visibility js-toggle-password-visibility">SHOW</button>
+	</div>
+	
+	<input type="hidden" name="asyncCall" value="true" autocomplete="off">
+	
+	<div class="inputwrapper required">
+		<div class="input-column">
+			<input class="checkbox-input" type="checkbox" id="spring_security_remember_me" name="_spring_security_remember_me">
+			<label class="checkbox-label" for="spring_security_remember_me">Keep me signed in!</label>
+		</div>
+		<div class="input-column">
+			<a href="/en_us/password/requestSignIn" class="link password-reset ">Forgot your password?</a>
+		</div>
+	</div>
+	<button type="submit" class="button large js-set-session-storage btn-login">SIGN IN</button>
+</form>
+
+	
+    <a class="button large secondary" href="/en_us/register">BECOME A MEMBER</a>
+	<a class="link register" href="/en_us/member/info.html">Loyalty Program Info</a>
+
+
+
+</div>
